@@ -181,7 +181,7 @@ video {
     float: right;
 }
 
-.tc {
+.t_c {
     text-align: center;
 }
 
@@ -248,4 +248,11 @@ video {
 }
 .mt10 {
     margin-top: 10px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+
+.this_alert .el-dialog__header{
+    text-align: left;
 }

@@ -2,18 +2,18 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import 'element-ui/lib/theme-default/index.css'// element-UI css
+import '../src/assets/css/common.css'// 公用css
+// import axios from 'axios'
 import App from './App'
 import router from './router'
 
 Vue.use(ElementUI)
-
+// Vue.use(axios)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
-  el: '#app',
+const app = new Vue({
   router,
-  template: '<App/>',
-  components: { App }
-})
+  render: h => h(App)
+}).$mount('#app');
