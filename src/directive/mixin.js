@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import location from '../location/location.js';
 
-
-
 //全局混合
 Vue.mixin({
     data() {
